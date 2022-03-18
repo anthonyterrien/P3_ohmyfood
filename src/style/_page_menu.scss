@@ -17,11 +17,17 @@ $color-tertiary: #99E2D0;
     font-size: 50px;
     margin-left: 50px;
   }
+
+  h1 {
+    font-family: "Shrikhand", "cursive";
+    font-size: 70px;
+    margin: 35px 30% 35px 0;
+  }
 }
 
 .card_menu {
   background-color: rgb(246, 246, 246);
-  margin-top: -60px;
+  margin-top: 40px;
   width: 100%;
   height: 180px;
   border-radius: 120px 120px 0 0;
@@ -31,6 +37,11 @@ $color-tertiary: #99E2D0;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
+
+  h2 {
+    font-family: "Shrikhand", "cursive";
+    font-size: 60px;
+  }
 }
 
 .img {
@@ -38,9 +49,6 @@ $color-tertiary: #99E2D0;
   z-index: 1;
 }
 
-.title {
-  font-size: 60px;
-}
 
 .entrées {
   display: flex;
@@ -52,7 +60,7 @@ $color-tertiary: #99E2D0;
 
 .img img {
   width: 100%;
-  height: 500px;
+  height: 650px;
   object-fit: cover;
 }
 
@@ -80,6 +88,8 @@ $color-tertiary: #99E2D0;
   margin-top: 10px;
   font-size: 45px;
   font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .secondaire {
@@ -87,6 +97,8 @@ $color-tertiary: #99E2D0;
   margin-bottom: 0;
   font-size: 40px;
   font-weight: 100;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .bouton {
@@ -168,12 +180,15 @@ $color-tertiary: #99E2D0;
   color: white;
 }
 
-.price p {
+.price {
+  display: flex;
+  justify-content: flex-end;
   font-size: 40px;
   font-weight: 500;
   margin-top: 115px;
   margin-bottom: 0;
 }
+
 
 .container_plat {
   display: flex;
@@ -247,3 +262,4 @@ $color-tertiary: #99E2D0;
   }
 
 }
+

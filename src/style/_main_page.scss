@@ -7,6 +7,12 @@ $color-tertiary: #99E2D0;
 .header_home_page {
   display: flex;
   justify-content: center;
+
+  h1 {
+    font-family: "Shrikhand", "cursive";
+    font-size: 80px;
+    margin: 35px;
+  }
 }
 
 .address {
@@ -151,7 +157,6 @@ a {
 
   .subtitle {
     font-size: 45px;
-    font-weight: 150;
     margin: 0;
   }
 }
