@@ -61,6 +61,10 @@
   font-weight: 600;
 }
 
+.organize_card_functioning {
+  padding: 0;
+}
+
 .card_Functioning {
   height: 170px;
   width: auto;
@@ -73,6 +77,7 @@
 }
 .card_Functioning:hover {
   background-color: rgba(240, 207, 255, 0.24);
+  cursor: pointer;
 }
 
 .round {
@@ -169,6 +174,103 @@ a {
   color: #FF79DA;
 }
 
+@media (min-width: 1024px) {
+  .header_home_page h1 {
+    font-size: 2.5vw;
+  }
+
+  .address {
+    height: 100px;
+  }
+  .address i {
+    font-size: 25px;
+  }
+  .address p {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .title_description {
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .subtitle_description {
+    font-size: 30px;
+  }
+
+  .organize_card_functioning {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card_Functioning {
+    height: auto;
+    width: 30%;
+    border-radius: 35px;
+    margin: 50px 0 0 30px;
+  }
+
+  .subtitle_functioning {
+    width: 150%;
+    font-size: 1.7vw;
+    margin: 15px 0;
+  }
+
+  .round {
+    height: 45px;
+    width: 45px;
+    font-size: 1.5vw;
+  }
+
+  .logo_Functioning {
+    margin: 5%;
+    font-size: 2vw;
+  }
+
+  .title_functioning {
+    font-size: 32px;
+  }
+
+  .organize_card_restaurants {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .img {
+    height: 225px;
+  }
+
+  .card_restaurants {
+    width: 420px;
+    height: 350px;
+  }
+
+  .text_card .title {
+    font-size: 30px;
+  }
+  .text_card .subtitle {
+    font-size: 28px;
+  }
+
+  .logo_card_home_page {
+    font-size: 28px;
+  }
+
+  .title_restaurants {
+    font-size: 32px;
+    margin-bottom: 5%;
+  }
+
+  .storage_text_card {
+    margin: 20px;
+  }
+
+  .Functioning {
+    margin-bottom: 60px;
+  }
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -176,6 +278,12 @@ body {
 
 .center {
   padding: 60px;
+}
+
+.organize_bouton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .bouton_description {
@@ -193,6 +301,7 @@ body {
   margin: 50px 0 70px 0;
   font-size: 40px;
   color: white;
+  cursor: pointer;
 }
 
 footer {
@@ -226,7 +335,35 @@ footer a {
   color: white;
 }
 
-.test {
+@media (min-width: 1024px) {
+  .bouton_description {
+    height: auto;
+    width: 25%;
+    margin: 39px 0 0 0;
+    font-size: 1.5vw;
+    padding: 30px 0;
+  }
+
+  .organize_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer {
+    height: auto;
+  }
+  footer li {
+    font-size: 1.5vw;
+  }
+  footer h2 {
+    font-size: 2vw;
+  }
+  footer i {
+    font-size: 2vw;
+  }
+}
+body {
   background-color: #f6f6f6;
 }
 
@@ -242,7 +379,9 @@ footer a {
 .page_header h1 {
   font-family: "Shrikhand", "cursive";
   font-size: 70px;
-  margin: 35px 30% 35px 0;
+}
+.page_header .burger_menu {
+  display: none;
 }
 
 .card_menu {
@@ -255,7 +394,7 @@ footer a {
   z-index: 5;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
 }
 .card_menu h2 {
@@ -282,8 +421,8 @@ footer a {
 }
 
 .logo_card {
-  margin-top: 60px;
   font-size: 60px;
+  cursor: pointer;
 }
 
 .logo_card i:nth-child(2) {
@@ -367,6 +506,7 @@ footer a {
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   border-radius: 40px;
   margin: 20px;
+  cursor: pointer;
 }
 
 @keyframes slidein {
@@ -466,6 +606,71 @@ footer a {
     font-size: 70px;
     width: 0;
     opacity: 0.1;
+  }
+}
+@media (min-width: 1024px) {
+  .organize_menu {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 5;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .card_plat {
+    height: 110px;
+    border-radius: 30px;
+  }
+
+  .principal {
+    font-size: 18px;
+  }
+
+  .secondaire {
+    margin-top: 15px;
+    font-size: 17px;
+  }
+
+  .price {
+    font-size: 24px;
+    margin-top: 68px;
+  }
+
+  .img img {
+    height: 165%;
+  }
+
+  .title_plat {
+    font-size: 2vw;
+  }
+
+  .card_menu h2 {
+    font-size: 2.5vw;
+  }
+
+  .logo_card {
+    font-size: 50px;
+  }
+
+  .page_header h1 {
+    font-size: 2.5vw;
+  }
+  .page_header i {
+    font-size: 2.5vw;
+    margin-left: 100%;
+  }
+
+  .bouton_description {
+    margin: 60px;
+  }
+
+  .logo_card {
+    font-size: 2.5vw;
+    margin: 0;
+  }
+
+  .card_menu {
+    align-items: center;
   }
 }
 .contact {

@@ -3,6 +3,7 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
+$breakpoints: 1024px;
 
 .header_home_page {
   display: flex;
@@ -23,10 +24,12 @@ $color-tertiary: #99E2D0;
   width: 100%;
   background-color: rgb(234, 234, 234);
   box-shadow: rgba(0, 0, 0, 0.20) 0 5px 4px 0 inset;
+
   i {
     font-size: 40px;
     margin-right: 30px;
   }
+
   p {
     font-size: 40px;
     font-weight: 600;
@@ -65,6 +68,10 @@ $color-tertiary: #99E2D0;
   font-weight: 600;
 }
 
+.organize_card_functioning {
+  padding: 0;
+}
+
 .card_Functioning {
   height: 170px;
   width: auto;
@@ -74,9 +81,10 @@ $color-tertiary: #99E2D0;
   align-items: center;
   margin: 50px 0 0 30px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 5px 15px;
+
   &:hover {
-    background-color: rgba(240, 207, 255, 0.24)
-  ;
+    background-color: rgba(240, 207, 255, 0.24);
+    cursor: pointer;
   }
 }
 
@@ -179,3 +187,111 @@ a {
   }
 
 }
+
+@media (min-width: $breakpoints) {
+  .header_home_page {
+
+    h1 {
+      font-size: 2.5vw;
+    }
+  }
+
+  .address {
+    height: 100px;
+
+    i {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+
+  .title_description {
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .subtitle_description {
+    font-size: 30px;
+  }
+
+  .organize_card_functioning {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card_Functioning {
+    height: auto;
+    width: 30%;
+    border-radius: 35px;
+    margin: 50px 0 0 30px;
+  }
+
+  .subtitle_functioning {
+    width: 150%;
+    font-size: 1.7vw;
+    margin: 15px 0;
+  }
+
+  .round {
+    height: 45px;
+    width: 45px;
+    font-size: 1.5vw;
+  }
+
+  .logo_Functioning {
+    margin: 5%;
+    font-size: 2vw;
+  }
+
+  .title_functioning {
+    font-size: 32px;
+  }
+
+  .organize_card_restaurants {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .img {
+    height: 225px;
+  }
+
+  .card_restaurants {
+    width: 420px;
+    height: 350px;
+  }
+
+  .text_card {
+
+    .title {
+      font-size: 30px;
+    }
+
+    .subtitle {
+      font-size: 28px;
+    }
+  }
+
+  .logo_card_home_page {
+    font-size: 28px;
+  }
+
+  .title_restaurants {
+    font-size: 32px;
+    margin-bottom: 5%;
+  }
+
+  .storage_text_card {
+    margin: 20px;
+  }
+
+  .Functioning {
+    margin-bottom: 60px;
+  }
+}
+
