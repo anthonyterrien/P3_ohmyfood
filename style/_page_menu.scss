@@ -56,8 +56,7 @@ body {
 .entrées {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 100px;
+  flex-wrap: nowrap;
 }
 
 .img img {
@@ -86,21 +85,58 @@ body {
 }
 
 .principal {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  font-size: 45px;
-  font-weight: 600;
-  display: flex;
-  justify-content: flex-start;
+  font-size: 50px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
 }
 
 .secondaire {
-  margin-top: 20px;
-  margin-bottom: 0;
-  font-size: 40px;
-  font-weight: 100;
+  font-weight: 200;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 45px;
+  margin: 0;
+}
+
+.test1 {
+  background: white;
+  border-radius: 45px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
   display: flex;
-  justify-content: flex-start;
+  animation: slide 1s forwards;
+  opacity: 0;
+  margin: 25px 0;
+  height: 200px;
+}
+
+.test1:nth-child(1) {
+  animation-delay: calc(1s / 5);
+}
+
+.test1:nth-child(2) {
+  animation-delay: calc(2s / 5);
+}
+
+.test1:nth-child(3) {
+  animation-delay: calc(3s / 5);
+}
+
+.test1:nth-child(4) {
+  animation-delay: calc(4s / 5);
+}
+
+.test1:nth-child(5) {
+  animation-delay: calc(5s / 5);
+}
+.test1:hover .check_logo {
+  opacity: 100%;
+  width: 150px;
+}
+
+.test1:hover .logo_animation {
+  transform: rotate(0deg);
 }
 
 .bouton {
@@ -144,124 +180,56 @@ body {
 }
 
 .card_plat {
+  padding: 25px;
+  overflow: hidden;
+  flex: 1;
   display: flex;
   justify-content: space-between;
-  animation-duration: 3s;
-  animation-name: slidein;
-  background-color: white;
-  height: 180px;
-  width: 85%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-  border-radius: 40px;
-  margin: 20px;
-  cursor: pointer;
-}
-
-@keyframes slidein {
-  from {
-    margin-bottom: 100%;
-  }
-
-  to {
-    margin-bottom: 2%;
-  }
 }
 
 .check_logo {
-  animation-name: slidein;
-  border-radius: 0 40px 40px 0;
-  height: 180px;
-  background-color: $color-tertiary;
+  background-color: #99e2d0;
+  cursor: pointer;
+  height: auto;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 45px 45px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
-
 .logo_animation {
-  font-size: 0;
+  font-size: 80px;
   color: white;
+  transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
 }
 
 .price {
+  font-weight: 600;
   display: flex;
-  justify-content: flex-end;
-  font-size: 40px;
-  font-weight: 500;
-  margin-top: 115px;
-  margin-bottom: 0;
+  align-items: flex-end;
+  font-size: 45px;
 }
 
 .container_plat {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 30px;
+  justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.card_plat:hover .check_logo {
-  animation-name: progress-bar;
-  animation-duration: 3000ms;
-}
-
-.card_plat:hover .logo_animation {
-  animation-name: rotation;
-  animation-duration: 3000ms;
-}
-
-@keyframes progress-bar {
-  0% {
-    width: 0;
-    opacity: .1;
+@keyframes slide {
+  from {
+    transform: translatey(20px);
+    opacity: 0%;
   }
-  20% {
-    opacity: 1;
+  to {
+    transform: translatey(0px);
+    opacity: 100%;
   }
-
-  50% {
-    width: 180px;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    width: 0;
-    opacity: .1;
-  }
-
-}
-
-@keyframes rotation {
-  0% {
-    margin: 90px;
-    font-size: 70px;
-    width: 0;
-    opacity: .1;
-  }
-  20% {
-    margin: 90px;
-    font-size: 70px;
-    opacity: 1;
-  }
-
-  50% {
-    margin: 90px;
-    transform: rotate(360deg);
-    font-size: 70px;
-    width: 180px;
-  }
-  70% {
-    margin: 90px;
-    font-size: 70px;
-    opacity: 1;
-  }
-  100% {
-    margin: 90px;
-    transform: rotate(360deg);
-    font-size: 70px;
-    width: 0;
-    opacity: .1;
-  }
-
 }
 
 @media (min-width: $breakpoints) {
@@ -269,14 +237,12 @@ body {
   .organize_menu {
     display: flex;
     flex-wrap: wrap;
-    z-index: 5;
     width: 100%;
     justify-content: space-around;
   }
 
   .card_plat {
-    height: 110px;
-    border-radius: 30px;
+    height: 80px;
   }
 
   .principal {
@@ -336,4 +302,22 @@ body {
   .card_menu {
     align-items: center;
   }
+  .test1 {
+    width: 390px;
+    border-radius: 30px;
+    height: 130px;
+  }
+  .check_logo {
+    border-radius: 0 30px 30px 0;
+  }
+  .logo_animation {
+    font-size: 45px;
+  }
+  .test1:hover .check_logo {
+    width: 100px;
+  }
 }
+
+
+
+
