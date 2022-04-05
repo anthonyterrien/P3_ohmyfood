@@ -8,47 +8,56 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-<header class="header_home_page">
-    <h1>ohmyfood</h1>
+<div class="spinner_container">
+    <div class="spinner"></div>
+    <div class="spinner"></div>
+    <div class="spinner"></div>
+    <div class="spinner"></div>
+</div>
+<header class="main_page">
+    <a href="#">
+    <img src="./img/logo/ohmyfood.png"
+         alt="La palette du goût">
+    </a>
 </header>
 <main>
     <section class="address">
-        <i class="fas fa-map-marker-alt"></i>
-        <p>Paris, Belleville</p>
+        <i class="fas fa-map-marker-alt address_pin"></i>
+        <p class="address_city">Paris, Belleville</p>
     </section>
     <section class="description center">
-        <h2 class="title_description">Réservez le menu qui vous convient</h2>
-        <p class="subtitle_description">Découvrez des restaurants d'exception séléctionnées par nos soins</p>
-        <a class="bouton_description">
+        <h2 class="description_title">Réservez le menu qui vous convient</h2>
+        <p class="description_subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <a class="colorful_button">
             Explorer nos restaurants
         </a>
     </section>
-    <section class="Functioning center">
-        <h2 class="title_functioning">Fonctionnement</h2>
-        <ul class="organize_card_functioning">
-            <li class="card_Functioning">
-                <div class="round">1</div>
-                <div class="card">
-                    <p class="subtitle_functioning">
-                        <i class="logo_Functioning fas fa-mobile-alt"></i>
+    <section class="functioning center">
+        <h2 class="functioning_title">Fonctionnement</h2>
+        <ul class="functioning_container">
+            <li class="functioning_card">
+                <div class="functioning_card_round">1</div>
+                <div>
+                    <p class="functioning_card_subtitle">
+                        <i class="functioning_card_logo fas fa-mobile-alt"></i>
                         Choisisez un restaurant
                     </p>
                 </div>
             </li>
-            <li class="card_Functioning">
-                <div class="round">2</div>
-                <div class="card">
-                    <p class="subtitle_functioning">
-                        <i class="logo_Functioning fas fa-list"></i>
+            <li class="functioning_card">
+                <div class="functioning_card_round">2</div>
+                <div>
+                    <p class="functioning_card_subtitle">
+                        <i class="functioning_card_logo fas fa-list"></i>
                         Composez votre menu
                     </p>
                 </div>
             </li>
-            <li class="card_Functioning">
-                <div class="round">3</div>
-                <div class="card">
-                    <p class="subtitle_functioning">
-                        <i class="logo_Functioning fas fa-store"></i>
+            <li class="functioning_card">
+                <div class="functioning_card_round">3</div>
+                <div>
+                    <p class="functioning_card_subtitle">
+                        <i class="functioning_card_logo fas fa-store"></i>
                         Dégustez au restaurant
                     </p>
                 </div>
@@ -56,66 +65,66 @@
         </ul>
     </section>
     <section class="restaurants center" id="return_of_pages">
-        <h2 class="title_restaurants">Restaurants</h2>
-        <div class="organize_card_restaurants">
-            <a href="pages/la_palette_du_gout.html">
-                <div class="card_restaurants">
+        <h2 class="restaurants_title">Restaurants</h2>
+        <div class="restaurants_container">
+            <a href="pages/la palette du gout.html">
+                <div class="restaurants_card">
                     <img src="./img/restaurants/la_palette_du_gout.jpg"
-                         alt="La palette du goût" class="img">
-                    <div class="storage_text_card">
-                        <div class="text_card">
-                            <p class="title">La palette du goût</p>
-                            <p class="subtitle">Ménilmontant</p>
+                         alt="La palette du goût" class="img_container">
+                    <div class="restaurants_card_container">
+                        <div class="restaurants_card_text">
+                            <h3 class="restaurants_card_title">La palette du goût</h3>
+                            <p class="restaurants_card_subtitle">Ménilmontant</p>
                         </div>
-                        <div class="logo_card_home_page">
+                        <div class="restaurants_card_logo heart_logo">
                             <i class="far fa-heart"></i>
                             <i class="fas fa-heart"></i>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="pages/la_note_enchantee.html">
-                <div class="card_restaurants">
+            <a href="pages/la note enchantee.html">
+                <div class="restaurants_card">
                     <img src="./img/restaurants/la_note_enchantee.jpg"
-                         alt="La note enchantée" class="img">
-                    <div class="storage_text_card">
-                        <div class="text_card">
-                            <p class="title">La note enchantée</p>
-                            <p class="subtitle">Charonne</p>
+                         alt="La note enchantée" class="img_container">
+                    <div class="restaurants_card_container">
+                        <div class="restaurants_card_text">
+                            <h3 class="restaurants_card_title">La note enchantée</h3>
+                            <p class="restaurants_card_subtitle">Charonne</p>
                         </div>
-                        <div class="logo_card_home_page">
+                        <div class="restaurants_card_logo heart_logo">
                             <i class="far fa-heart"></i>
                             <i class="fas fa-heart"></i>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="pages/a_la_francaise.html">
-                <div class="card_restaurants">
+            <a href="pages/a la francaise.html">
+                <div class="restaurants_card">
                     <img src="./img/restaurants/a_la_francaise.jpg"
-                         alt="À la francaise" class="img">
-                    <div class="storage_text_card">
-                        <div class="text_card">
-                            <p class="title">À la francaise</p>
-                            <p class="subtitle">Cité Rouge</p>
+                         alt="À la francaise" class="img_container">
+                    <div class="restaurants_card_container">
+                        <div class="restaurants_card_text">
+                            <h3 class="restaurants_card_title">À la francaise</h3>
+                            <p class="restaurants_card_subtitle">Cité Rouge</p>
                         </div>
-                        <div class="logo_card_home_page">
+                        <div class="restaurants_card_logo heart_logo">
                             <i class="far fa-heart"></i>
                             <i class="fas fa-heart"></i>
                         </div>
                     </div>
                 </div>
             </a>
-            <a href="pages/le_delice_des_sens.html">
-                <div class="card_restaurants">
+            <a href="pages/le delice des sens.html">
+                <div class="restaurants_card">
                     <img src="./img/restaurants/le_delice_des_sens.jpg"
-                         alt="Le déice des sens" class="img">
-                    <div class="storage_text_card">
-                        <div class="text_card">
-                            <p class="title">Le déice des sens</p>
-                            <p class="subtitle">Folie-Mécricourt</p>
+                         alt="Le déice des sens" class="img_container">
+                    <div class="restaurants_card_container">
+                        <div class="restaurants_card_text">
+                            <h3 class="restaurants_card_title">Le déice des sens</h3>
+                            <p class="restaurants_card_subtitle">Folie-Mécricourt</p>
                         </div>
-                        <div class="logo_card_home_page">
+                        <div class="restaurants_card_logo heart_logo">
                             <i class="far fa-heart"></i>
                             <i class="fas fa-heart"></i>
                         </div>
@@ -125,24 +134,28 @@
         </div>
     </section>
 </main>
-<footer>
-    <h2>ohmyfood</h2>
-    <ul class="center organize_footer">
-        <li><i class="logo_footer fas fa-utensils"></i>
+<footer class="footer">
+    <h4>ohmyfood</h4>
+    <ul class="center footer_container">
+        <li class="footer_line">
+            <i class="footer_logo fas fa-utensils"></i>
             <a href="#">
                 Proposer un restaurant
             </a>
         </li>
-        <li><i class="logo_footer fas fa-hands-helping"></i>
+        <li class="footer_line">
+            <i class="footer_logo fas fa-hands-helping"></i>
             <a href="#">
                 Devenir partenaire
             </a>
         </li>
-        <li><a href="#">
+        <li class="footer_line">
+            <a href="#">
             Mentions légales
         </a>
         </li>
-        <li><a class="subtitle" href="mailto:ohmyfood@ohmyfood.fr">
+        <li class="footer_line">
+            <a href="mailto:ohmyfood@ohmyfood.fr">
             contact
         </a>
         </li>

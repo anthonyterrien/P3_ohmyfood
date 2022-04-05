@@ -1,0 +1,220 @@
+.main_page {
+  display: flex;
+  justify-content: center;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #eaeaea;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 4px 0 inset;
+}
+.address_pin {
+  font-size: 4.5vw;
+  margin-right: 3%;
+}
+.address_city {
+  font-size: 4.5vw;
+  font-weight: 600;
+  color: #353535;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(234, 234, 234, 0.55);
+  height: auto;
+  width: auto;
+}
+.description_title {
+  margin: 3% 7%;
+  font-size: 6vw;
+  text-align: center;
+  font-weight: 700;
+}
+.description_subtitle {
+  margin: 2%;
+  font-size: 3.5vw;
+  text-align: center;
+  color: #353535;
+}
+
+.functioning {
+  margin-bottom: 10%;
+}
+.functioning_title {
+  font-size: 6vw;
+  font-weight: 600;
+}
+.functioning_container {
+  padding: 0;
+}
+.functioning_card {
+  border-radius: 50px;
+  background-color: rgba(234, 234, 234, 0.55);
+  display: flex;
+  align-items: center;
+  margin: 7% 0 0 30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 15px;
+}
+.functioning_card:hover {
+  background-color: rgba(240, 207, 255, 0.24);
+  cursor: pointer;
+}
+.functioning_card_round {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  background-color: #9356DC;
+  color: white;
+  margin-left: -30px;
+  font-size: 35px;
+}
+.functioning_card_subtitle {
+  font-weight: 700;
+  font-size: 4.5vw;
+  margin: 10% 0;
+}
+.functioning_card_logo {
+  font-size: 50px;
+  margin: 0 45px;
+  color: gray;
+}
+
+.restaurants {
+  background-color: rgba(234, 234, 234, 0.55);
+  height: auto;
+  width: auto;
+}
+.restaurants_title {
+  font-size: 6vw;
+  font-weight: 600;
+}
+.restaurants .img_container {
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+  border-radius: 50px 50px 0 0;
+}
+.restaurants_card {
+  width: 100%;
+  height: 635px;
+  border-radius: 50px;
+  background-color: white;
+  margin-bottom: 60px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+.restaurants_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  cursor: pointer;
+}
+.restaurants_card_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+.restaurants_card_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.restaurants_card_title {
+  font-size: 45px;
+  font-weight: 750;
+  margin: 0 0 10px;
+}
+.restaurants_card_subtitle {
+  font-size: 45px;
+  margin: 0;
+}
+.restaurants_card_logo {
+  font-size: 60px;
+}
+
+@media (min-width: 1024px) {
+  .address_pin {
+    font-size: 1.5vw;
+    margin-right: 1%;
+  }
+  .address_city {
+    font-size: 1.5vw;
+  }
+
+  .description_title {
+    margin: 0 0 1% 0;
+    font-size: 2vw;
+  }
+  .description_subtitle {
+    margin: 0;
+    font-size: 1.5vw;
+  }
+
+  .functioning {
+    margin-bottom: 5%;
+  }
+  .functioning_title {
+    font-size: 2vw;
+  }
+  .functioning_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .functioning_card {
+    height: auto;
+    width: 30%;
+    border-radius: 35px;
+  }
+  .functioning_card_round {
+    height: 45px;
+    width: 45px;
+    font-size: 1.5vw;
+  }
+  .functioning_card_subtitle {
+    width: 145%;
+    font-size: 1.7vw;
+    margin: 15px 0;
+  }
+  .functioning_card_logo {
+    margin: 5%;
+    font-size: 2vw;
+  }
+
+  .restaurants_title {
+    font-size: 2vw;
+    margin-bottom: 5%;
+  }
+  .restaurants_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .restaurants .img_container {
+    height: 225px;
+  }
+  .restaurants_card {
+    width: 420px;
+    height: 350px;
+  }
+  .restaurants_card_container {
+    margin: 20px;
+  }
+  .restaurants_card_title {
+    font-size: 30px;
+  }
+  .restaurants_card_subtitle {
+    font-size: 28px;
+  }
+  .restaurants_card_logo {
+    font-size: 28px;
+  }
+}
+
+/*# sourceMappingURL=main%20page.css.map */

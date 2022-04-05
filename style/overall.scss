@@ -1,0 +1,231 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+$breakpoints: 1024px;
+
+//    overall    //
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.center {
+  padding: 60px;
+}
+
+
+//    button    //
+
+.colorful_button {
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 70%;
+  background: $color-primary;
+  background: -webkit-linear-gradient(to top left, $color-primary 0%, $color-secondary 100%);
+  background: -moz-linear-gradient(to top left, $color-primary 0%, $color-secondary 100%);
+  background: linear-gradient(to top left, $color-primary 0%, $color-secondary 100%);
+  border-radius: 65px;
+  display: flex;
+  margin: 50px 0 70px 0;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background: $color-primary 90%;
+    background: -webkit-linear-gradient(to top left, $color-primary 0%, $color-secondary 90%);
+    background: -moz-linear-gradient(to top left, $color-primary 0%, $color-secondary 90%);
+    background: linear-gradient(to top left, $color-primary 0%, $color-secondary 90%);
+    box-shadow: rgba(0, 0, 0, 0.50) 0 7px 17px;
+  }
+}
+
+
+//    spinner    //
+
+.spinner {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient($color-primary, $color-secondary);
+  margin: 10px;
+  border-radius: 20px;
+  animation: wave 1s ; //infinite
+  animation-fill-mode: both;
+
+  &:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+}
+
+.spinner_container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  animation: gray_gradient 1s;
+  animation-fill-mode: both;
+
+  &:nth-child(1) {
+    animation-delay: 1s;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes gray_gradient {
+  0% {
+    background: rgba(255, 255, 255, 0.27);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0);
+    z-index: -10000;
+  }
+}
+
+
+//    heart_logo    //
+
+.heart_logo {
+  cursor: pointer;
+
+  &:hover i:nth-child(1) {
+    display: none;
+  }
+
+  &:hover i:nth-child(2) {
+    display: block;
+    color: $color-secondary;
+    animation: pink_gradient 0.5s;
+  }
+}
+
+.heart_logo i:nth-child(2) {
+  display: none;
+}
+
+@keyframes pink_gradient {
+  from {
+    color: $color-primary;
+    opacity: 70%;
+  }
+  to {
+    color: $color-secondary;
+    opacity: 100%;
+  }
+}
+
+
+//        <footer>        //
+
+.footer {
+  list-style-type: none;
+  background-color: rgb(53, 53, 53);
+  height: 600px;
+
+  h4 {
+    font-family: "Shrikhand", "cursive";
+    padding: 60px 60px 0;
+    font-size: 55px;
+    color: white;
+    margin: 0;
+  }
+
+  &_container {
+    margin: 0;
+  }
+
+  &_line {
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 45px;
+    color: white;
+    margin: 15px 0;
+    font-weight: 500;
+  }
+
+  &_logo {
+    font-size: 35px;
+    margin-right: 30px;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+//        </footer>        //
+
+@media (min-width: $breakpoints) {
+
+  //    button    //
+
+  .colorful_button {
+    height: auto;
+    width: 25%;
+    margin: 39px 0 0 0;
+    font-size: 1.5vw;
+    padding: 30px 0;
+  }
+
+  //        <footer>        //
+
+  .footer {
+    height: auto;
+
+    h4 {
+      font-size: 2vw;
+    }
+
+    &_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &_line {
+      font-size: 1.5vw;
+    }
+
+    &_logo {
+      font-size: 2vw;
+    }
+  }
+
+  //        </footer>        //
+
+}

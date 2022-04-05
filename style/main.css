@@ -1,31 +1,25 @@
-@charset "UTF-8";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-.header_home_page {
+.main_page {
   display: flex;
   justify-content: center;
-}
-.header_home_page h1 {
-  font-family: "Shrikhand", "cursive";
-  font-size: 80px;
-  margin: 35px;
+  padding: 41px;
 }
 
 .address {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;
   width: 100%;
   background-color: #eaeaea;
   box-shadow: rgba(0, 0, 0, 0.2) 0 5px 4px 0 inset;
 }
-.address i {
-  font-size: 40px;
-  margin-right: 30px;
+.address_pin {
+  font-size: 4.5vw;
+  margin-right: 3%;
 }
-.address p {
-  font-size: 40px;
+.address_city {
+  font-size: 4.5vw;
   font-weight: 600;
   color: #353535;
 }
@@ -38,49 +32,42 @@
   height: auto;
   width: auto;
 }
-
-.title_description {
-  margin: 50px 70px 0 70px;
-  font-size: 60px;
+.description_title {
+  margin: 3% 7%;
+  font-size: 6vw;
   text-align: center;
   font-weight: 700;
 }
-
-.subtitle_description {
-  font-size: 40px;
+.description_subtitle {
+  margin: 2%;
+  font-size: 3.5vw;
   text-align: center;
   color: #353535;
 }
 
-.Functioning {
-  margin-bottom: 100px;
+.functioning {
+  margin-bottom: 10%;
 }
-
-.title_functioning {
-  font-size: 60px;
+.functioning_title {
+  font-size: 6vw;
   font-weight: 600;
 }
-
-.organize_card_functioning {
+.functioning_container {
   padding: 0;
 }
-
-.card_Functioning {
-  height: 170px;
-  width: auto;
+.functioning_card {
   border-radius: 50px;
   background-color: rgba(234, 234, 234, 0.55);
   display: flex;
   align-items: center;
-  margin: 50px 0 0 30px;
+  margin: 7% 0 0 30px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 5px 15px;
 }
-.card_Functioning:hover {
+.functioning_card:hover {
   background-color: rgba(240, 207, 255, 0.24);
   cursor: pointer;
 }
-
-.round {
+.functioning_card_round {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -92,16 +79,15 @@
   margin-left: -30px;
   font-size: 35px;
 }
-
-.logo_Functioning {
+.functioning_card_subtitle {
+  font-weight: 700;
+  font-size: 4.5vw;
+  margin: 10% 0;
+}
+.functioning_card_logo {
   font-size: 50px;
   margin: 0 45px;
   color: gray;
-}
-
-.subtitle_functioning {
-  font-weight: 700;
-  font-size: 45px;
 }
 
 .restaurants {
@@ -109,18 +95,17 @@
   height: auto;
   width: auto;
 }
-
-.title_restaurants {
-  font-size: 60px;
+.restaurants_title {
+  font-size: 6vw;
   font-weight: 600;
 }
-
-a {
-  text-decoration: none;
-  color: black;
+.restaurants .img_container {
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+  border-radius: 50px 50px 0 0;
 }
-
-.card_restaurants {
+.restaurants_card {
   width: 100%;
   height: 635px;
   border-radius: 50px;
@@ -128,147 +113,110 @@ a {
   margin-bottom: 60px;
   box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
 }
-
-.img {
-  object-fit: cover;
-  width: 100%;
-  height: 450px;
-  border-radius: 50px 50px 0 0;
+.restaurants_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  cursor: pointer;
 }
-
-.storage_text_card {
+.restaurants_card_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 30px;
 }
-
-.text_card {
+.restaurants_card_text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.text_card .title {
+.restaurants_card_title {
   font-size: 45px;
   font-weight: 750;
   margin: 0 0 10px;
 }
-.text_card .subtitle {
+.restaurants_card_subtitle {
   font-size: 45px;
   margin: 0;
 }
-
-.logo_card_home_page {
-  font-size: 50px;
-  margin-right: 40px;
-}
-.logo_card_home_page i:nth-child(2) {
-  display: none;
-}
-.logo_card_home_page:hover i:nth-child(1) {
-  display: none;
-}
-.logo_card_home_page:hover i:nth-child(2) {
-  display: block;
-  color: #FF79DA;
+.restaurants_card_logo {
+  font-size: 60px;
 }
 
 @media (min-width: 1024px) {
-  .header_home_page h1 {
-    font-size: 2.5vw;
+  .address_pin {
+    font-size: 1.5vw;
+    margin-right: 1%;
+  }
+  .address_city {
+    font-size: 1.5vw;
   }
 
-  .address {
-    height: 100px;
+  .description_title {
+    margin: 0 0 1% 0;
+    font-size: 2vw;
   }
-  .address i {
-    font-size: 25px;
-  }
-  .address p {
-    font-size: 25px;
-    font-weight: 600;
-  }
-
-  .title_description {
-    font-size: 50px;
+  .description_subtitle {
     margin: 0;
+    font-size: 1.5vw;
   }
 
-  .subtitle_description {
-    font-size: 30px;
+  .functioning {
+    margin-bottom: 5%;
   }
-
-  .organize_card_functioning {
+  .functioning_title {
+    font-size: 2vw;
+  }
+  .functioning_container {
     display: flex;
     justify-content: space-between;
   }
-
-  .card_Functioning {
+  .functioning_card {
     height: auto;
     width: 30%;
     border-radius: 35px;
-    margin: 50px 0 0 30px;
   }
-
-  .subtitle_functioning {
-    width: 145%;
-    font-size: 1.7vw;
-    margin: 15px 0;
-  }
-
-  .round {
+  .functioning_card_round {
     height: 45px;
     width: 45px;
     font-size: 1.5vw;
   }
-
-  .logo_Functioning {
+  .functioning_card_subtitle {
+    width: 145%;
+    font-size: 1.7vw;
+    margin: 15px 0;
+  }
+  .functioning_card_logo {
     margin: 5%;
     font-size: 2vw;
   }
 
-  .title_functioning {
-    font-size: 32px;
+  .restaurants_title {
+    font-size: 2vw;
+    margin-bottom: 5%;
   }
-
-  .organize_card_restaurants {
+  .restaurants_container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
-
-  .img {
+  .restaurants .img_container {
     height: 225px;
   }
-
-  .card_restaurants {
+  .restaurants_card {
     width: 420px;
     height: 350px;
   }
-
-  .text_card .title {
-    font-size: 30px;
-  }
-  .text_card .subtitle {
-    font-size: 28px;
-  }
-
-  .logo_card_home_page {
-    font-size: 28px;
-  }
-
-  .title_restaurants {
-    font-size: 32px;
-    margin-bottom: 5%;
-  }
-
-  .storage_text_card {
+  .restaurants_card_container {
     margin: 20px;
   }
-
-  .Functioning {
-    margin-bottom: 60px;
+  .restaurants_card_title {
+    font-size: 30px;
+  }
+  .restaurants_card_subtitle {
+    font-size: 28px;
+  }
+  .restaurants_card_logo {
+    font-size: 28px;
   }
 }
 body {
@@ -276,17 +224,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .center {
   padding: 60px;
 }
 
-.organize_bouton {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.bouton_description {
+.colorful_button {
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   align-items: center;
   justify-content: center;
@@ -303,23 +250,115 @@ body {
   color: white;
   cursor: pointer;
 }
+.colorful_button:hover {
+  background: #9356DC 90%;
+  background: -webkit-linear-gradient(to top left, #9356DC 0%, #FF79DA 90%);
+  background: -moz-linear-gradient(to top left, #9356DC 0%, #FF79DA 90%);
+  background: linear-gradient(to top left, #9356DC 0%, #FF79DA 90%);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 7px 17px;
+}
 
-footer {
+.spinner {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  margin: 10px;
+  border-radius: 20px;
+  animation: wave 1s;
+  animation-fill-mode: both;
+}
+.spinner:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.spinner:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.spinner:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.spinner:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.spinner_container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: gray_gradient 1s;
+  animation-fill-mode: both;
+}
+.spinner_container:nth-child(1) {
+  animation-delay: 1s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes gray_gradient {
+  0% {
+    background: rgba(255, 255, 255, 0.27);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0);
+    z-index: -10000;
+  }
+}
+.heart_logo {
+  cursor: pointer;
+}
+.heart_logo:hover i:nth-child(1) {
+  display: none;
+}
+.heart_logo:hover i:nth-child(2) {
+  display: block;
+  color: #FF79DA;
+  animation: pink_gradient 0.5s;
+}
+
+.heart_logo i:nth-child(2) {
+  display: none;
+}
+
+@keyframes pink_gradient {
+  from {
+    color: #9356DC;
+    opacity: 70%;
+  }
+  to {
+    color: #FF79DA;
+    opacity: 100%;
+  }
+}
+.footer {
   list-style-type: none;
   background-color: #353535;
   height: 600px;
 }
-footer h2 {
+.footer h4 {
   font-family: "Shrikhand", "cursive";
   padding: 60px 60px 0;
   font-size: 55px;
   color: white;
   margin: 0;
 }
-footer ul {
+.footer_container {
   margin: 0;
 }
-footer li {
+.footer_line {
   list-style-type: none;
   cursor: pointer;
   font-size: 45px;
@@ -327,16 +366,16 @@ footer li {
   margin: 15px 0;
   font-weight: 500;
 }
-footer i {
+.footer_logo {
   font-size: 35px;
   margin-right: 30px;
 }
-footer a {
+.footer a {
   color: white;
 }
 
 @media (min-width: 1024px) {
-  .bouton_description {
+  .colorful_button {
     height: auto;
     width: 25%;
     margin: 39px 0 0 0;
@@ -344,22 +383,21 @@ footer a {
     padding: 30px 0;
   }
 
-  .organize_footer {
+  .footer {
+    height: auto;
+  }
+  .footer h4 {
+    font-size: 2vw;
+  }
+  .footer_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
-  footer {
-    height: auto;
-  }
-  footer li {
+  .footer_line {
     font-size: 1.5vw;
   }
-  footer h2 {
-    font-size: 2vw;
-  }
-  footer i {
+  .footer_logo {
     font-size: 2vw;
   }
 }
@@ -367,26 +405,38 @@ body {
   background-color: #f6f6f6;
 }
 
-.page_header {
+.menu_page {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.page_header i {
+
+.header_arrow {
   font-size: 50px;
-  margin-left: 50px;
-}
-.page_header h1 {
-  font-family: "Shrikhand", "cursive";
-  font-size: 70px;
-}
-.page_header .burger_menu {
-  display: none;
+  margin: 50px;
+  color: black;
 }
 
-.card_menu {
+.header_burger {
+  font-size: 50px;
+  margin: 50px;
+  color: transparent;
+}
+
+.img_container {
+  position: relative;
+  z-index: 1;
+}
+
+.img_container img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+.menu {
   background-color: #f6f6f6;
-  margin-top: 40px;
+  margin-top: -180px;
   width: 100%;
   height: 180px;
   border-radius: 120px 120px 0 0;
@@ -397,64 +447,38 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.card_menu h2 {
+.menu h2 {
   font-family: "Shrikhand", "cursive";
   font-size: 60px;
 }
-
-.img {
-  position: relative;
-  z-index: 1;
+.menu_logo {
+  font-size: 80px;
 }
 
-.entrées {
+.menu_category {
+  font-size: 40px;
+  margin-left: 50px;
+}
+.menu_category h3 {
+  margin-bottom: -15px;
+}
+
+.line {
+  width: 110px;
+  height: 8px;
+}
+.line_color {
+  width: 110px;
+  height: 8px;
+  fill: #99E2D0;
+}
+
+.list {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
 }
-
-.img img {
-  width: 100%;
-  height: 650px;
-  object-fit: cover;
-}
-
-.logo_card {
-  font-size: 60px;
-  cursor: pointer;
-}
-
-.logo_card i:nth-child(2) {
-  display: none;
-}
-
-.logo_card:hover i:nth-child(1) {
-  display: none;
-}
-
-.logo_card:hover i:nth-child(2) {
-  animation-delay: 2s;
-  display: block;
-  color: #FF79DA;
-}
-
-.principal {
-  font-size: 50px;
-  font-weight: 400;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin: 0;
-}
-
-.secondaire {
-  font-weight: 200;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 45px;
-  margin: 0;
-}
-
-.test1 {
+.list_menu {
   background: white;
   border-radius: 45px;
   box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
@@ -464,84 +488,53 @@ body {
   margin: 25px 0;
   height: 200px;
 }
-
-.test1:nth-child(1) {
-  animation-delay: 0.2s;
+@keyframes slide {
+  from {
+    transform: translatey(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translatey(0px);
+    opacity: 100%;
+  }
 }
-
-.test1:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-.test1:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-.test1:nth-child(4) {
-  animation-delay: 0.8s;
-}
-
-.test1:nth-child(5) {
-  animation-delay: 1s;
-}
-
-.test1:hover .check_logo {
-  opacity: 100%;
-  width: 150px;
-}
-
-.test1:hover .logo_animation {
-  transform: rotate(0deg);
-}
-
-.bouton {
-  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-  align-items: center;
-  justify-content: center;
-  height: 130px;
-  width: 50%;
-  background: #9356DC;
-  background: -webkit-linear-gradient(to top left, #9356DC 0%, #FF79DA 100%);
-  background: -moz-linear-gradient(to top left, #9356DC 0%, #FF79DA 100%);
-  background: linear-gradient(to top left, #9356DC 0%, #FF79DA 100%);
-  border-radius: 65px;
-  display: flex;
-  margin: 100px 0 100px 25%;
-}
-.bouton p {
-  font-size: 45px;
-  color: white;
-}
-
-.title_plat {
-  font-size: 40px;
-  margin-left: 50px;
-}
-.title_plat p {
-  margin-bottom: -15px;
-}
-
-.svg {
-  width: 110px;
-  height: 8px;
-}
-
-.svg_color {
-  width: 110px;
-  height: 8px;
-  fill: #99E2D0;
-}
-
-.card_plat {
+.list_card {
   padding: 25px;
   overflow: hidden;
   flex: 1;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
-
-.check_logo {
-  background-color: #99e2d0;
+.list_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.list_info_title {
+  font-size: 50px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+.list_info_subtitle {
+  font-weight: 200;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 45px;
+  margin: 0;
+}
+.list_price {
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  font-size: 45px;
+}
+.list_logo {
+  background-color: #99E2D0;
   cursor: pointer;
   height: auto;
   width: 0;
@@ -552,118 +545,104 @@ body {
   justify-content: center;
   transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
-
-.logo_animation {
+.list_logo_animation {
   font-size: 80px;
   color: white;
   transform: rotate(360deg);
   transition: 0.4s ease-in-out;
 }
+.list_menu:nth-child(1) {
+  animation-delay: 0.6s;
+}
+.list_menu:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.list_menu:nth-child(3) {
+  animation-delay: 1s;
+}
+.list_menu:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.list_menu:nth-child(5) {
+  animation-delay: 1.4s;
+}
+.list_menu:hover .list_logo {
+  opacity: 100%;
+  width: 150px;
+}
+.list_menu:hover .list_logo_animation {
+  transform: rotate(0deg);
+}
 
-.price {
-  font-weight: 600;
+.container_colorful_button {
   display: flex;
-  align-items: flex-end;
-  font-size: 45px;
+  justify-content: center;
 }
 
-.container_plat {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-@keyframes slide {
-  from {
-    transform: translatey(20px);
-    opacity: 0%;
-  }
-  to {
-    transform: translatey(0px);
-    opacity: 100%;
-  }
-}
 @media (min-width: 1024px) {
-  .organize_menu {
+  .menu_page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu_page .header_arrow {
+    font-size: 2.5vw;
+    margin-left: 100%;
+  }
+
+  .img_container img {
+    height: 600px;
+  }
+
+  .menu {
+    align-items: center;
+  }
+  .menu h2 {
+    font-size: 2.5vw;
+  }
+  .menu_logo {
+    font-size: 2.5vw;
+    margin: 0;
+  }
+
+  .menu_container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
   }
 
-  .card_plat {
-    height: 80px;
-  }
-
-  .principal {
-    font-size: 18px;
-  }
-
-  .secondaire {
-    margin-top: 15px;
-    font-size: 17px;
-  }
-
-  .price {
-    font-size: 24px;
-    margin-top: 68px;
-  }
-
-  .img img {
-    height: 165%;
-  }
-
-  .title_plat {
-    font-size: 2vw;
-  }
-
-  .card_menu h2 {
-    font-size: 2.5vw;
-  }
-
-  .logo_card {
-    font-size: 50px;
-  }
-
-  .page_header h1 {
-    font-size: 2.5vw;
-  }
-  .page_header i {
-    font-size: 2.5vw;
-    margin-left: 100%;
-  }
-
-  .bouton_description {
-    margin: 60px;
-  }
-
-  .logo_card {
-    font-size: 2.5vw;
-    margin: 0;
-  }
-
-  .card_menu {
-    align-items: center;
-  }
-
-  .test1 {
+  .list_menu {
     width: 390px;
     border-radius: 30px;
     height: 130px;
   }
-
-  .check_logo {
+  .list_card {
+    height: 80px;
+  }
+  .list_info_title {
+    font-size: 18px;
+  }
+  .list_info_subtitle {
+    margin-top: 15px;
+    font-size: 17px;
+  }
+  .list_price {
+    font-size: 24px;
+    margin-top: 68px;
+  }
+  .list_logo {
     border-radius: 0 30px 30px 0;
   }
-
-  .logo_animation {
+  .list_menu:hover .list_logo {
+    width: 100px;
+  }
+  .list_logo_animation {
     font-size: 45px;
   }
 
-  .test1:hover .check_logo {
-    width: 100px;
+  .colorful_button {
+    margin: 60px;
   }
 }
 
