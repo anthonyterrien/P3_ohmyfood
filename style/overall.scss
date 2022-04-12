@@ -1,6 +1,7 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-gray: #f6f6f6;
 
 $breakpoints: 1024px;
 
@@ -9,6 +10,7 @@ $breakpoints: 1024px;
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  cursor: default;
 }
 
 a {
@@ -17,7 +19,34 @@ a {
 }
 
 .center {
-  padding: 60px;
+  padding: 5%;
+}
+
+
+//    header    //
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4% 0;
+
+  img {
+    width: 100%;
+  }
+
+  &_title {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+  }
+
+  &_logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 
@@ -27,16 +56,14 @@ a {
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   align-items: center;
   justify-content: center;
-  height: 130px;
-  width: 70%;
   background: $color-primary;
   background: -webkit-linear-gradient(to top left, $color-primary 0%, $color-secondary 100%);
   background: -moz-linear-gradient(to top left, $color-primary 0%, $color-secondary 100%);
   background: linear-gradient(to top left, $color-primary 0%, $color-secondary 100%);
-  border-radius: 65px;
+  border-radius: 100px;
   display: flex;
-  margin: 50px 0 70px 0;
-  font-size: 40px;
+  margin: 6%;
+  font-size: 4vw;
   color: white;
   cursor: pointer;
   &:hover {
@@ -109,7 +136,7 @@ a {
 
 @keyframes gray_gradient {
   0% {
-    background: rgba(255, 255, 255, 0.27);
+    background: rgb(255, 255, 255, 1);
   }
   100% {
     background: rgba(255, 255, 255, 0);
@@ -155,12 +182,11 @@ a {
 .footer {
   list-style-type: none;
   background-color: rgb(53, 53, 53);
-  height: 600px;
 
   h4 {
     font-family: "Shrikhand", "cursive";
-    padding: 60px 60px 0;
-    font-size: 55px;
+    padding: 5% 5% 0;
+    font-size: 5vw;
     color: white;
     margin: 0;
   }
@@ -172,15 +198,14 @@ a {
   &_line {
     list-style-type: none;
     cursor: pointer;
-    font-size: 45px;
+    font-size: 4vw;
     color: white;
-    margin: 15px 0;
-    font-weight: 500;
+    margin: 3% 0;
   }
 
   &_logo {
-    font-size: 35px;
-    margin-right: 30px;
+    font-size: 4vw;
+    margin-right: 3%;
   }
 
   a {
@@ -192,23 +217,39 @@ a {
 
 @media (min-width: $breakpoints) {
 
+  .center {
+    padding: 3%;
+  }
+
+  //    header    //
+
+  .header {
+    padding: 2% 0;
+
+    &_title {
+      width: 15%;
+    }
+
+    &_logo {
+      width: 5%;
+    }
+  }
+
   //    button    //
 
   .colorful_button {
-    height: auto;
-    width: 25%;
-    margin: 39px 0 0 0;
+    margin: 3%;
+    padding: 2% 5%;
     font-size: 1.5vw;
-    padding: 30px 0;
   }
 
   //        <footer>        //
 
   .footer {
-    height: auto;
 
     h4 {
       font-size: 2vw;
+      padding: 3% 3% 0;
     }
 
     &_container {
@@ -219,10 +260,11 @@ a {
 
     &_line {
       font-size: 1.5vw;
+      margin: 2% 0;
     }
 
     &_logo {
-      font-size: 2vw;
+      font-size: 1.5vw;
     }
   }
 

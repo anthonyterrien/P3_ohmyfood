@@ -1,35 +1,43 @@
-// TODO delete them from here to have them only in 'overall'
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-gray: #f6f6f6;
 
 $breakpoints: 1024px;
 
 
 //    <body>    //
-    //    in overall.scss    //
+//    in overall.scss    //
 
 //    </body>    //
 
 
 //    <div class="spinner_container">    //
-    //    in overall.scss    //
+//    in overall.scss    //
 
 //    </div>    //
 
-//    <header class="header main_page">    //
-    //    in overall.scss - and bottom    //
+//    <header class="header">    //
+//    in overall.scss - and bottom    //
 
-.main_page {
-  display: flex;
-  justify-content: center;
-  padding: 41px;
+
+.header {
+
+  &_arrow_main {
+    font-size: 5vw;
+    display: none;
+  }
+
+  &_burger_main {
+    font-size: 5vw;
+    display: none;
+  }
 }
 
 //    </header>    //
 
 //    <main>    //
-    //    no style    //
+//    no style    //
 //    </main>    //
 
 //    <section class="address">    //
@@ -43,14 +51,16 @@ $breakpoints: 1024px;
   box-shadow: rgba(0, 0, 0, 0.20) 0 5px 4px 0 inset;
 
   &_pin {
-    font-size: 4.5vw;
+    font-size: 4vw;
     margin-right: 3%;
+    cursor: pointer;
   }
 
   &_city {
-    font-size: 4.5vw;
-    font-weight: 600;
+    font-size: 4vw;
+    font-weight: 500;
     color: rgb(53, 53, 53);
+    cursor: pointer;
   }
 
 }
@@ -58,35 +68,38 @@ $breakpoints: 1024px;
 //    </section>    //
 
 //    <section class="description center">    //
-    //    in overall.scss - and bottom    //
+//    in overall.scss - and bottom    //
 
 .description {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(234, 234, 234, 0.55);
-  height: auto;
-  width: auto;
+  background-color: $color-gray;
 
   &_title {
-    margin: 3% 7%;
+    margin: 3% 10%;
     font-size: 6vw;
     text-align: center;
     font-weight: 700;
   }
 
   &_subtitle {
-    margin: 2%;
-    font-size: 3.5vw;
+    margin: 1%;
+    font-size: 4vw;
     text-align: center;
-    color: rgb(53, 53, 53);
+    color: #353535;
+    font-weight: 300;
+  }
+
+  .button_main {
+    padding: 5% 7%;
   }
 }
 
 //    </section>    //
 
 //    <section class="functioning center">    //
-    //    in overall.scss - and bottom    //
+//    in overall.scss - and bottom    //
 
 .functioning {
   margin-bottom: 10%;
@@ -101,16 +114,21 @@ $breakpoints: 1024px;
   }
 
   &_card {
-    border-radius: 50px;
-    background-color: rgba(234, 234, 234, 0.55);
+    border-radius: 5vw;
+    background-color: $color-gray;
     display: flex;
     align-items: center;
-    margin: 7% 0 0 30px;
+    margin: 7% 0 0 5%;
     box-shadow: rgba(0, 0, 0, 0.2) 0 5px 15px;
+    width: 95%;
 
     &:hover {
       background-color: rgba(240, 207, 255, 0.24);
       cursor: pointer;
+
+      .functioning_card_logo {
+        color: $color-primary;
+      }
     }
   }
 
@@ -118,24 +136,28 @@ $breakpoints: 1024px;
     align-items: center;
     justify-content: center;
     display: flex;
-    height: 70px;
-    width: 70px;
     border-radius: 70px;
     background-color: $color-primary;
     color: white;
-    margin-left: -30px;
-    font-size: 35px;
+    margin-left: -5%;
+    font-size: 3vw;
+    padding: 2% 3%;
+  }
+
+  &_align_logo{
+    display: flex;
+    align-items: center;
   }
 
   &_card_subtitle {
     font-weight: 700;
-    font-size: 4.5vw;
+    font-size: 4vw;
     margin: 10% 0;
   }
 
   &_card_logo {
-    font-size: 50px;
-    margin: 0 45px;
+    font-size: 5vw;
+    margin: 0 10%;
     color: gray;
   }
 }
@@ -143,12 +165,13 @@ $breakpoints: 1024px;
 //    </section>    //
 
 //    <section class="restaurants center">    //
-    //    in overall.scss - and bottom    //
+//    in overall.scss - and bottom    //
 
 .restaurants {
-  background-color: rgba(234, 234, 234, 0.55);
-  height: auto;
-  width: auto;
+  background-color: $color-gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   &_title {
     font-size: 6vw;
@@ -158,21 +181,33 @@ $breakpoints: 1024px;
   .img_container {
     object-fit: cover;
     width: 100%;
-    height: 450px;
-    border-radius: 50px 50px 0 0;
+    aspect-ratio: 2 / 1;
+    border-radius: 5vw 5vw 0 0;
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: column;
   }
 
   &_card {
     width: 100%;
-    height: 635px;
-    border-radius: 50px;
+    border-radius: 5vw;
     background-color: white;
-    margin-bottom: 60px;
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    margin-bottom: 8%;
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
       cursor: pointer;
+
+      .restaurants_card_title {
+        color: $color-primary;
+      }
+
+      .restaurants_card_subtitle {
+        color: $color-primary;
+      }
     }
   }
 
@@ -181,7 +216,7 @@ $breakpoints: 1024px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 30px;
+    padding: 4% 5%;
   }
 
   &_card_text {
@@ -191,25 +226,24 @@ $breakpoints: 1024px;
   }
 
   &_card_title {
-    font-size: 45px;
-    font-weight: 750;
-    margin: 0 0 10px;
+    font-size: 5vw;
+    margin: 0 0 3%;
   }
 
   &_card_subtitle {
-    font-size: 45px;
+    font-size: 5vw;
     margin: 0;
   }
 
   &_card_logo {
-    font-size: 60px;
+    font-size: 5vw;
   }
 }
 
 //    </section>    //
 
 //    <footer class="footer">    //
-    //    in overall.scss    //
+//    in overall.scss    //
 
 //    </footer>    //
 
@@ -246,6 +280,10 @@ $breakpoints: 1024px;
       margin: 0;
       font-size: 1.5vw;
     }
+
+    .button_main {
+      padding: 2% 4%;
+    }
   }
 
   //    </section>    //
@@ -266,28 +304,26 @@ $breakpoints: 1024px;
     }
 
     &_card {
-      height: auto;
-      width: 30%;
-      border-radius: 35px;
+      border-radius: 2.5vw;
+      margin: 5% 0 0 5%;
     }
 
     &_card_round {
-      height: 45px;
-      width: 45px;
+      margin-left: -5%;
       font-size: 1.5vw;
+      padding: 2% 4%;
     }
 
     &_card_subtitle {
-      width: 145%;
       font-size: 1.7vw;
-      margin: 15px 0;
     }
 
     &_card_logo {
-      margin: 5%;
       font-size: 2vw;
+      margin: 0 5%;
     }
   }
+
 
   //    </section>    //
 
@@ -298,42 +334,42 @@ $breakpoints: 1024px;
 
     &_title {
       font-size: 2vw;
-      margin-bottom: 5%;
+    }
+
+    .img_container {
+      border-radius: 2vw 2vw 0 0;
+    }
+
+    a {
+      width: 23%;
     }
 
     &_container {
       display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-    }
-
-    .img_container {
-      height: 225px;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
     &_card {
-      width: 420px;
-      height: 350px;
-    }
-
-    &_card_container {
-      margin: 20px;
+      border-radius: 2vw;
+      height: 90%;
     }
 
     &_card_title {
-      font-size: 30px;
+      font-size: 1.5vw;
+      //margin: 0 0 3%;
     }
 
     &_card_subtitle {
-      font-size: 28px;
+      font-size: 1.5vw;
+      //margin: 0;
     }
 
     &_card_logo {
-      font-size: 28px;
+      font-size: 2vw;
     }
   }
 
   //    </section>    //
 
 }
-
