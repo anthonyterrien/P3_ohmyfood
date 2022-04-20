@@ -6,14 +6,21 @@
     <title>Ohmyfood</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="style/main.css">
+    <meta name="description" content="
+    Ohmyfood! est une jeune startup qui répertorie les menus de restaurants gastronomiques.
+    En plus des systèmes classiques de réservation, vous pourrez composer le menu de votre repas pour que les plats soient prêts à votre arrivez.
+    Finis, les temps d'attente au restaurant !">
 </head>
+
 <body>
+
 <div class="spinner_container">
     <div class="spinner"></div>
     <div class="spinner"></div>
     <div class="spinner"></div>
     <div class="spinner"></div>
 </div>
+
 <header class="header">
     <div class="header_logo">
         <a href="index.html#return_of_pages">
@@ -32,6 +39,7 @@
         </a>
     </div>
 </header>
+
 <main>
     <section class="address">
         <i class="fas fa-map-marker-alt address_pin"></i>
@@ -49,8 +57,8 @@
         <ul class="functioning_container">
             <li class="functioning_card">
                 <div class="functioning_card_round">1</div>
+                <i class="functioning_card_logo fas fa-mobile-alt"></i>
                 <div class="functioning_align_logo">
-                    <i class="functioning_card_logo fas fa-mobile-alt"></i>
                     <h3 class="functioning_card_subtitle">
                         Choisisez un restaurant
                     </h3>
@@ -58,8 +66,8 @@
             </li>
             <li class="functioning_card">
                 <div class="functioning_card_round">2</div>
+                <i class="functioning_card_logo fas fa-list"></i>
                 <div class="functioning_align_logo">
-                    <i class="functioning_card_logo fas fa-list"></i>
                     <h3 class="functioning_card_subtitle">
                         Composez votre menu
                     </h3>
@@ -67,8 +75,8 @@
             </li>
             <li class="functioning_card">
                 <div class="functioning_card_round">3</div>
+                <i class="functioning_card_logo fas fa-store"></i>
                 <div class="functioning_align_logo">
-                    <i class="functioning_card_logo fas fa-store"></i>
                     <h3 class="functioning_card_subtitle">
                         Dégustez au restaurant
                     </h3>
@@ -79,8 +87,11 @@
     <section class="restaurants center" id="return_of_pages">
         <h2 class="restaurants_title">Restaurants</h2>
         <div class="restaurants_container">
-            <a href="pages/la palette du gout.html">
+            <a href="pages/la%20palette%20du%20gout.html">
                 <div class="restaurants_card">
+                    <div class="restaurants_new">
+                        <p class="restaurants_new_txt">Nouveau</p>
+                    </div>
                     <img src="./img/restaurants/la_palette_du_gout.jpg"
                          alt="La palette du goût" class="img_container">
                     <div class="restaurants_card_container">
@@ -95,8 +106,11 @@
                     </div>
                 </div>
             </a>
-            <a href="pages/la note enchantee.html">
+            <a href="pages/la%20note%20enchantee.html">
                 <div class="restaurants_card">
+                    <div class="restaurants_new">
+                        <p class="restaurants_new_txt">Nouveau</p>
+                    </div>
                     <img src="./img/restaurants/la_note_enchantee.jpg"
                          alt="La note enchantée" class="img_container">
                     <div class="restaurants_card_container">
@@ -111,7 +125,7 @@
                     </div>
                 </div>
             </a>
-            <a href="pages/a la francaise.html">
+            <a href="pages/a%20la%20francaise.html">
                 <div class="restaurants_card">
                     <img src="./img/restaurants/a_la_francaise.jpg"
                          alt="À la francaise" class="img_container">
@@ -127,7 +141,7 @@
                     </div>
                 </div>
             </a>
-            <a href="pages/le delice des sens.html">
+            <a href="pages/le%20delice%20des%20sens.html">
                 <div class="restaurants_card">
                     <img src="./img/restaurants/le_delice_des_sens.jpg"
                          alt="Le déice des sens" class="img_container">
@@ -146,6 +160,7 @@
         </div>
     </section>
 </main>
+
 <footer class="footer">
     <h4>ohmyfood</h4>
     <ul class="center footer_container">
@@ -173,4 +188,5 @@
         </li>
     </ul>
 </footer>
+
 </body>

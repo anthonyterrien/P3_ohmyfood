@@ -96,7 +96,7 @@
 .functioning_card_subtitle {
   font-weight: 700;
   font-size: 4vw;
-  margin: 10% 0;
+  margin: 15% 0;
 }
 .functioning_card_logo {
   font-size: 5vw;
@@ -119,6 +119,20 @@
   width: 100%;
   aspect-ratio: 2/1;
   border-radius: 5vw 5vw 0 0;
+}
+.restaurants_new {
+  background-color: #99E2D0;
+  border-radius: 0.5vw;
+  position: absolute;
+  z-index: 5;
+  margin: 5% 62%;
+  padding: 1.5% 4%;
+}
+.restaurants_new_txt {
+  font-size: 4vw;
+  font-weight: 500;
+  color: #038968;
+  margin: 0;
 }
 .restaurants_container {
   display: flex;
@@ -218,6 +232,14 @@
   }
   .restaurants .img_container {
     border-radius: 2vw 2vw 0 0;
+  }
+  .restaurants_new {
+    margin: 1% 13%;
+    padding: 0.5% 1.5%;
+    border-radius: 0.2vw;
+  }
+  .restaurants_new_txt {
+    font-size: 1vw;
   }
   .restaurants a {
     width: 23%;

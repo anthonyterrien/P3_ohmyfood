@@ -66,6 +66,7 @@ a {
   font-size: 4vw;
   color: white;
   cursor: pointer;
+
   &:hover {
     background: $color-primary 90%;
     background: -webkit-linear-gradient(to top left, $color-primary 0%, $color-secondary 90%);
@@ -84,7 +85,7 @@ a {
   background: linear-gradient($color-primary, $color-secondary);
   margin: 10px;
   border-radius: 20px;
-  animation: wave 1s ; //infinite
+  animation: wave 1s; //infinite
   animation-fill-mode: both;
 
   &:nth-child(1) {
@@ -111,9 +112,9 @@ a {
   left: 0;
   top: 0;
   z-index: 10000;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: gray_gradient 1s;
   animation-fill-mode: both;
 

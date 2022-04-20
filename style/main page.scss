@@ -144,7 +144,7 @@ $breakpoints: 1024px;
     padding: 2% 3%;
   }
 
-  &_align_logo{
+  &_align_logo {
     display: flex;
     align-items: center;
   }
@@ -152,7 +152,7 @@ $breakpoints: 1024px;
   &_card_subtitle {
     font-weight: 700;
     font-size: 4vw;
-    margin: 10% 0;
+    margin: 15% 0;
   }
 
   &_card_logo {
@@ -183,6 +183,22 @@ $breakpoints: 1024px;
     width: 100%;
     aspect-ratio: 2 / 1;
     border-radius: 5vw 5vw 0 0;
+  }
+
+  &_new {
+    background-color: $color-tertiary;
+    border-radius: 0.5vw;
+    position: absolute;
+    z-index: 5;
+    margin: 5% 62%;
+    padding: 1.5% 4%;
+  }
+
+  &_new_txt {
+    font-size: 4vw;
+    font-weight: 500;
+    color: #038968;
+    margin: 0;
   }
 
   &_container {
@@ -338,6 +354,16 @@ $breakpoints: 1024px;
 
     .img_container {
       border-radius: 2vw 2vw 0 0;
+    }
+
+    &_new {
+      margin: 1% 13%;
+      padding: 0.5% 1.5%;
+      border-radius: 0.2vw;
+    }
+
+    &_new_txt {
+      font-size: 1vw;
     }
 
     a {
